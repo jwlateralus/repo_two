@@ -1,0 +1,105 @@
+﻿  Compiling CUDA source file p1 (1)\CUDA_GL.cu...
+  
+  C:\Users\jack-\Documents\GIT>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\bin\nvcc.exe" -gencode=arch=compute_35,code=\"sm_35,compute_35\" --use-local-env -ccbin "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64" -x cu  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include"  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile -cudart static  -g   -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Fdx64\Debug\vc141.pdb /FS /Zi /RTC1 /MDd " -o x64\Debug\CUDA_GL.cu.obj "C:\Users\jack-\Documents\GIT\p1 (1)\CUDA_GL.cu" 
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1157): error : this declaration has no storage class or type specifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1157): error : expected a ";"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1158): error : this declaration has no storage class or type specifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1158): error : variable "WINGDIAPI" has already been defined
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1158): error : expected a ";"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1159): error : variable "WINGDIAPI" is not a type name
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1159): error : "GLboolean" has already been declared in the current scope
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1159): error : expected a ";"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1160): error : this declaration has no storage class or type specifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1160): error : variable "WINGDIAPI" has already been defined
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1160): error : expected a ";"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1161): error : this declaration has no storage class or type specifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1161): error : variable "WINGDIAPI" has already been defined
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1161): error : expected a ";"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1162): error : this declaration has no storage class or type specifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1162): error : variable "WINGDIAPI" has already been defined
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1162): error : expected a ";"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1163): error : this declaration has no storage class or type specifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1163): error : variable "WINGDIAPI" has already been defined
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1163): error : expected a ";"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1164): error : this declaration has no storage class or type specifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1164): error : variable "WINGDIAPI" has already been defined
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1164): error : expected a ";"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1165): error : this declaration has no storage class or type specifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1165): error : variable "WINGDIAPI" has already been defined
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1165): error : expected a ";"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1166): error : this declaration has no storage class or type specifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1166): error : variable "WINGDIAPI" has already been defined
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1166): error : expected a ";"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1167): error : this declaration has no storage class or type specifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1167): error : variable "WINGDIAPI" has already been defined
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1167): error : expected a ";"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1168): error : this declaration has no storage class or type specifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1168): error : variable "WINGDIAPI" has already been defined
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1168): error : expected a ";"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1169): error : this declaration has no storage class or type specifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1169): error : variable "WINGDIAPI" has already been defined
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1169): error : expected a ";"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1170): error : this declaration has no storage class or type specifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1170): error : variable "WINGDIAPI" has already been defined
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1170): error : expected a ";"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1171): error : this declaration has no storage class or type specifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1171): error : variable "WINGDIAPI" has already been defined
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1171): error : expected a ";"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1172): error : this declaration has no storage class or type specifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1172): error : variable "WINGDIAPI" has already been defined
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1172): error : expected a ";"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1173): error : this declaration has no storage class or type specifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1173): error : variable "WINGDIAPI" has already been defined
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1173): error : expected a ";"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1174): error : this declaration has no storage class or type specifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1174): error : variable "WINGDIAPI" has already been defined
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1174): error : expected a ";"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1175): error : this declaration has no storage class or type specifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1175): error : variable "WINGDIAPI" has already been defined
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1175): error : expected a ";"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1176): error : this declaration has no storage class or type specifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1176): error : variable "WINGDIAPI" has already been defined
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1176): error : expected a ";"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1177): error : this declaration has no storage class or type specifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1177): error : variable "WINGDIAPI" has already been defined
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1177): error : expected a ";"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1178): error : this declaration has no storage class or type specifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1178): error : variable "WINGDIAPI" has already been defined
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1178): error : expected a ";"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1179): error : this declaration has no storage class or type specifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1179): error : variable "WINGDIAPI" has already been defined
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1179): error : expected a ";"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1180): error : this declaration has no storage class or type specifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1180): error : variable "WINGDIAPI" has already been defined
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1180): error : expected a ";"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1181): error : this declaration has no storage class or type specifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1181): error : variable "WINGDIAPI" has already been defined
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1181): error : expected a ";"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1182): error : this declaration has no storage class or type specifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1182): error : variable "WINGDIAPI" has already been defined
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1182): error : expected a ";"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1183): error : this declaration has no storage class or type specifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1183): error : variable "WINGDIAPI" has already been defined
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1183): error : expected a ";"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1184): error : this declaration has no storage class or type specifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1184): error : variable "WINGDIAPI" has already been defined
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1184): error : expected a ";"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1185): error : this declaration has no storage class or type specifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1185): error : variable "WINGDIAPI" has already been defined
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1185): error : expected a ";"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1186): error : this declaration has no storage class or type specifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1186): error : variable "WINGDIAPI" has already been defined
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1186): error : expected a ";"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1187): error : this declaration has no storage class or type specifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1187): error : variable "WINGDIAPI" has already been defined
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1187): error : expected a ";"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1188): error : this declaration has no storage class or type specifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1188): error : variable "WINGDIAPI" has already been defined
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1188): error : expected a ";"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1189): error : this declaration has no storage class or type specifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1189): error : variable "WINGDIAPI" has already been defined
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1189): error : expected a ";"
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1190): error : this declaration has no storage class or type specifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.17763.0\um\GL/gl.h(1190): error : variable "WINGDIAPI" has already been defined
+  CUDA_GL.cu
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\VC\VCTargets\BuildCustomizations\CUDA 10.0.targets(712,9): error MSB3721: The command ""C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\bin\nvcc.exe" -gencode=arch=compute_35,code=\"sm_35,compute_35\" --use-local-env -ccbin "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64" -x cu  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include"  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile -cudart static  -g   -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Fdx64\Debug\vc141.pdb /FS /Zi /RTC1 /MDd " -o x64\Debug\CUDA_GL.cu.obj "C:\Users\jack-\Documents\GIT\p1 (1)\CUDA_GL.cu"" exited with code 1.
