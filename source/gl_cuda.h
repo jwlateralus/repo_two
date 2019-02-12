@@ -1,27 +1,35 @@
 
 // This module contains the entirety of the OpenGL, CUDA,
 // and CUDA-GL interop for maximum performance. 
-
-#ifndef gl_cuda_H
-#define gl_cuda_H
-#endif
+#include <chrono>
 #include <cstdint>
 #include <iostream>
 #include <list>
 #include <random>
 #include <string>
+
 #include <cuda_runtime.h>
 #include <cuda_gl_interop.h>
 #include <device_launch_parameters.h>
-#include "header.h"
 
-#define CHECK_FOR_CUDA_ERRORS	do { \
-									if (cudaStatus != cudaSuccess) { \
-									std::cout << "ERROR: CUDA reports " << cudaGetErrorString(cudaStatus) << ". Aborting." << std::endl; \
-									goto Error; \
-									} \
-								} while (false)
-// struct to draw boids 
+#include "params.h"
+
+
+//http://www.kfish.org/boids/pseudocode.html
+//Every particle/boid in this simulation can be represented by vectors 
+//it involves simple vector operations on the positions of the boids. 
+//Each of the boids rules works independently, so, for each boid, you calculate how much it will get moved by each of the three rules, giving you three velocity vectors. 
+//Then you add those three vectors to the boid's current velocity to work out its new velocity. 
+//Interpreting the velocity as how far the boid moves per time step we simply add it to the current position.
+
+#define CHECK_FOR_CUDA_ERRORS\
+ do { \
+	if (cudaStatus != cudaSuccess) { \
+		std::cout << "ERROR: CUDA reports " << cudaGetErrorString(cudaStatus) << ". Aborting." << std::endl; \
+			goto Error; \
+						} \
+						} while (false)
+
 struct Boid {
 	float x, y, vx, vy;
 };
