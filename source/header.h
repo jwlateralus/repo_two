@@ -1,20 +1,27 @@
-
 //contains user configurable parameters
-
+#include <chrono>
+#include <iostream>
+#include <string>
+#include <vector>
+#include "CUDA_GL.h"
+#include "interop.cuh"
+#include "UnifiedMathCUDA.cuh"
 
 //#define		enable_FullScreen			//	 Enable/ disable full screen   -- to do
 //#define		screen_Wrapping				//		 Enable / disable screen wrapping 
-#define		root_num_boids						(300.0)   // root of the number of boids
+
+#define		root_num_boids						(300)  // root of the number of boids
+#define		NUM_BOIDS							(6000)//NUMBER OF BOIDS | root_num_boids x root_num_boids 
 #define		win_width							(3 * 1920 / 4) // width of the window
 #define		win_height							(3 * 1080 / 4) // height of the window
 #define		CUDA_device								(0)  // Cuda device init
 
 
 											// number_frames_to_average	 number of frames into the past to track with 
-#define		number_frames_to_average					(1)
+#define		number_frames_to_average					(10)
 											//a moving average for determination of physics delta-t's
 
-#define		frame_rate_print_freq (10000000)
+#define		frame_rate_print_freq (1000000)
 											//required to get fps info on console, how often to print
 
 											// CUDA threads per CUDA execution block. 
@@ -34,7 +41,9 @@
 /*
 		Rule 1:Boids try to match velocity with near boids.
 		Rule 2: Boids try to keep a small distance away from other objects (including other boids)
-		Rule 3: Boids try to fly towards the centre of mass of neighbouring boids.
+		Rule 3: Boids try to fly towards the centre of mass of neighbouring boid
+
+		intensive play and experimentation  with the weight values required to get an accurate visual simulation
 */
 
 #define		boids_Alignment_Rule_value				(0.015f)	// magnitude of the alignment rule 
@@ -62,12 +71,12 @@
 
 
 
-#define	NUM_BOIDS					5000  //root_num_boids*root_num_boids
 
 
-#define simulation_update_per_seconds		(10000000)
-#define THREE_OVER_PI				(1.464591888f);
-#define fPI							(3.14159265359f);
+
+#define simulation_update_per_seconds	(10000000f)
+#define THREE_OVER_PI					(1.464591888f)
+#define PI								(3.1415926535f)
 
 #define NUM_BLOCKS	521 //				((NUM_BOIDS - 1) / THREADS_PER_BLOCK + 1)
 
@@ -79,3 +88,5 @@
 #define MAX_RGB						(255)
 #define fMAX_RGB					(255.0f)
 #define PREVENT_ZERO_RETURN			(0.000000001f)
+
+//***********************************************************************************************************************************************************************************************
